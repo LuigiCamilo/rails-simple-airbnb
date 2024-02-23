@@ -1,0 +1,49 @@
+<p style="color: green"><%= notice %></p>
+
+<body>
+    <div class="map" style="background-image: url('https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200')"></div>
+
+<div class="container margin-top-negative">
+  <div class="row">
+    <div class="col-8">
+      <div class="flat-show-card">
+        <h1><%= @flat.name %></h1>
+        <p class="flat-show-address"><%= @flat.address %></p>
+      </div>
+      <div class="flat-show-card">
+        <h3>A bit more about this flat...</h3>
+        <p><%= @flat.description %></p>
+        <%= image_tag 'https://images.imyfone.com/en/assets/article/iphone-tips/google-maps-location.png', class: "w-100" %>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="flat-show-card">
+        <h3>Details</h3>
+        <div class="flex">
+          <div class="flex">
+            <%= @flat.number_of_guests %> people
+          </div>
+          <div class="flex ms-3">
+            <%= @flat.price_per_night %> €
+          </div>
+        </div>
+      </div>
+      <div class="flat-show-card">
+        <div class="flex-align">
+          <h6 class="no-mb">Share</h6>
+
+          <div class="flex">
+            <i class="fa-brands fa-facebook-square me-2"></i>
+            <i class="fa-brands fa-twitter-square me-2"></i>
+            <i class="fa-brands fa-pinterest-square me-2"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
